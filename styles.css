@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url("./puntitos.png");
+  background-size: contain;
+  background-color: white;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.burger {
+  display: none;
+}
+
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.header__section__seccion_uno p {
+  font-size: 48px;
+  max-width: 300px;
+}
