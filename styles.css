@@ -22,7 +22,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+
 }
 
 header nav ul {
@@ -33,6 +33,7 @@ header nav ul {
   gap: 10px;
   font-weight: 700;
   font-size: 24px;
+
 }
 
 header nav ul li {
@@ -41,6 +42,8 @@ header nav ul li {
 }
 
 .burger {
+    width: 30px;
+    height: 30px;
   display: none;
 }
 
@@ -66,7 +69,6 @@ header nav ul li {
     background-color: #141414;
     display: flex;
     flex-direction: row;
- 
     padding: 10em;
 }
 .biography-section__container{
@@ -83,16 +85,28 @@ header nav ul li {
     color: #fff;
 }
 
+.biography-section__text__main{
+    display: none;
+}
+
+
+.biography-section__container__img__mobile{
+    display: none;
+}
+
 .biography-section__text__title{
     font-weight: 700;
     letter-spacing: -2px; 
 }
 
-.biography-section__text__description{
+.biography-section__text__description__desktop{
     font-weight: 400; 
     max-width: 532px; 
-    margin-top: 27px;
-    
+    margin-top: 27px; 
+}
+
+.biography-section__text__description__mobile {
+    display: none;
 }
 
 /* SERVICES SECTION */
@@ -218,4 +232,71 @@ form {
     justify-content: flex-start;
     align-items: center;
     gap:16px;
+}
+
+@media(max-width: 768px){
+    header nav ul {
+        display: none;
+        
+    }
+    header nav {
+        align-items: center;
+        padding: 0 1em;
+      
+    }
+    .burger{
+        display: inline;
+        
+    }
+
+    .header__section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .biography-section__container{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .biography-section__text__main{
+        color: #fff;
+        display: block;
+        font-size: 3em;
+    }
+
+    .biography-section__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+    }
+
+    .biography-section__text__title{
+        display: none;
+    }
+
+    .biography-section__text__description {
+        margin: 0;
+    }
+    
+    .biography-section__text__description__mobile{
+        display: block;
+    }
+
+    .biography-section__text__description__desktop{
+        display: none;
+    }
+
+    .biography-section__container__img__mobile{
+        display: block;
+    }
+
+    .biography-section__container__img__desktop{
+        display: none;
+    }
 }
