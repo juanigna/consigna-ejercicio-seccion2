@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  
 }
 
 /* HEADER SECTION */
@@ -47,6 +48,14 @@ header nav ul li {
   display: none;
 }
 
+.header__section_img_container{
+    width: 100% ;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .header__section {
   display: flex;
   justify-content: space-between;
@@ -60,6 +69,7 @@ header nav ul li {
 
 .header__section_img_container img{
     height: 100%;
+    
 }
 
 
@@ -260,6 +270,7 @@ form {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     .biography-section__text__main{
@@ -298,5 +309,25 @@ form {
 
     .biography-section__container__img__desktop{
         display: none;
+    }
+
+    .services-section__container{
+        flex-direction: column;
+    }
+
+    .services-section__container__card{
+        gap: 1em;
+    }
+
+    .form-section__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .footer-section{
+        flex-direction: column;
+        gap: 2em;
     }
 }
