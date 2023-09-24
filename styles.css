@@ -192,3 +192,30 @@ form {
     border-radius: 8px;
     cursor: pointer;
 }
+
+
+/* FOOTER SECTION */
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./puntitos.png");
+    padding: 5em;
+    align-items: center;
+}
+
+.right-footer{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+}
+
+.right-footer__redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:16px;
+}
